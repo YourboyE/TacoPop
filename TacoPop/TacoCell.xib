@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TacoCell" id="gTV-IL-0wX" customClass="TacoCell" customModule="TacoPop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="95" height="95"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="95" height="95"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Brisket" translatesAutoresizingMaskIntoConstraints="NO" id="Ruj-6T-roB">
+                        <rect key="frame" x="0.0" y="0.0" width="95" height="62.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="728" verticalCompressionResistancePriority="730" text="Brisket Taco" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="fL0-mh-tV7">
+                        <rect key="frame" x="0.0" y="67.5" width="95" height="23.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23.5" id="3LU-Ou-juf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="fL0-mh-tV7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="45n-H8-P7m"/>
+                <constraint firstItem="Ruj-6T-roB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="627-6f-647"/>
+                <constraint firstAttribute="trailing" secondItem="fL0-mh-tV7" secondAttribute="trailing" id="C5j-mf-qlK"/>
+                <constraint firstItem="fL0-mh-tV7" firstAttribute="top" secondItem="Ruj-6T-roB" secondAttribute="bottom" constant="5" id="K2Q-tc-ZJa"/>
+                <constraint firstItem="Ruj-6T-roB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="YLY-vc-s5W"/>
+                <constraint firstAttribute="bottom" secondItem="fL0-mh-tV7" secondAttribute="bottom" constant="4" id="d5j-Nc-tar"/>
+                <constraint firstItem="fL0-mh-tV7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="q92-4f-nTT"/>
+                <constraint firstAttribute="trailing" secondItem="fL0-mh-tV7" secondAttribute="trailing" id="tuB-0F-81A"/>
+                <constraint firstAttribute="trailing" secondItem="Ruj-6T-roB" secondAttribute="trailing" id="wIt-3D-Z6a"/>
+            </constraints>
+            <connections>
+                <outlet property="tacoImage" destination="Ruj-6T-roB" id="eNS-Ag-XRA"/>
+                <outlet property="tacoLabel" destination="fL0-mh-tV7" id="6Qs-hY-3Ob"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Brisket" width="1024" height="678"/>
+    </resources>
+</document>
